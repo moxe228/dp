@@ -38,8 +38,8 @@ li a0, 10 # x10 = 10
 
 .rodata
 array_lenght:
-  .word 4
+  .word 5
     
 .data
 array: 
-  .word 4, 3, 2, 1
+  .word 5, 4, 3, 2, 1
