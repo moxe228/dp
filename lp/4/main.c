@@ -1,14 +1,11 @@
 #include <stdio.h>
-#include "sorted.h"
 
-
-#define size 7
-int main(void) {
-	int array[size];
-	for (int i = 0; i < size; i++)
-		scanf("%i", array[i]);
-	sorted(array, size);
-	for (int i = 0; i < size; i++)
-		printf("%i ", &array[i]);
+int main()
+{
+	unsigned const array[4] = { 4, 3, 2, 1 };
+	size_t arraySize = sizeof(array) / sizeof(array[0]);
+	sorted(array, arraySize);
+	for (int i = 0; i < arraySize; i++)
+		printf("%d ", array[i]);
 	return 0;
 }
